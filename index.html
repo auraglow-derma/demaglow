@@ -24,8 +24,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .serif{font-family:'Cormorant Garamond',serif}
 .mesh-bg{background:radial-gradient(ellipse 80% 60% at 20% 10%,rgba(232,169,154,.22) 0%,transparent 55%),radial-gradient(ellipse 60% 80% at 80% 5%,rgba(201,169,110,.18) 0%,transparent 50%),radial-gradient(ellipse 70% 50% at 60% 90%,rgba(245,213,200,.28) 0%,transparent 55%),radial-gradient(ellipse 90% 40% at 10% 80%,rgba(232,213,163,.2) 0%,transparent 60%),var(--cream)}
 .hidden{display:none!important}
-
-/* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:none;cursor:pointer;border-radius:50px;font-family:'DM Sans',sans-serif;font-weight:500;letter-spacing:.04em;transition:all .25s;text-decoration:none;font-size:.85rem}
 .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:#fff;padding:12px 28px;box-shadow:0 4px 20px rgba(160,120,64,.3)}
 .btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(160,120,64,.4)}
@@ -36,8 +34,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .btn-wa:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(37,211,102,.35)}
 .btn-danger{background:#fee2e2;color:#dc2626;padding:8px 16px;font-size:.78rem;border-radius:50px;border:none;cursor:pointer;font-family:'DM Sans',sans-serif}
 .btn-danger:hover{background:#fecaca}
-
-/* Nav */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(18px);background:rgba(250,247,242,.88);border-bottom:1px solid var(--border);padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.65rem;font-weight:600;color:var(--text);cursor:pointer}
 .nav-logo span{color:var(--gold)}
@@ -48,8 +44,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .nav-icon-btn{background:none;border:none;cursor:pointer;color:var(--text-mid);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .2s;position:relative;font-size:1.1rem}
 .nav-icon-btn:hover{background:var(--blush);color:var(--gold-dark)}
 .cart-badge{position:absolute;top:4px;right:4px;background:var(--gold);color:#fff;font-size:.6rem;font-weight:700;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center}
-
-/* Hero */
 .hero{min-height:100vh;display:flex;align-items:center;padding:100px 48px 80px;position:relative;overflow:hidden}
 .hero-content{max-width:560px;z-index:1}
 .hero-eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:10px}
@@ -64,22 +58,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .hero-stats{display:flex;gap:40px;margin-top:52px;padding-top:32px;border-top:1px solid var(--border)}
 .hero-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600}
 .hero-stat-label{font-size:.72rem;color:var(--text-light);letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
-
-/* Marquee */
 .marquee-wrap{overflow:hidden;background:var(--gold);padding:12px 0}
 .marquee-track{display:flex;gap:48px;animation:marquee 22s linear infinite;white-space:nowrap;width:max-content}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .marquee-item{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#fff;display:flex;align-items:center;gap:14px}
 .marquee-dot{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5)}
-
-/* Section */
 .section{padding:88px 48px}
 .section-header{text-align:center;margin-bottom:56px}
 .section-eyebrow{font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.15}
 .section-subtitle{font-size:.92rem;color:var(--text-mid);margin-top:12px;font-weight:300}
-
-/* Product grid */
 .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
 .product-card{background:var(--white);border-radius:var(--r);overflow:hidden;border:1px solid var(--border);transition:all .3s;cursor:pointer;position:relative}
 .product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
@@ -99,16 +87,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .product-price{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600}
 .product-currency{font-size:.85rem;font-weight:400;color:var(--text-mid)}
 .product-actions{display:flex;gap:8px;margin-top:12px}
-
-/* Filters */
 .filters-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
 .filter-chip{padding:8px 18px;border-radius:50px;font-size:.78rem;font-weight:500;border:1.5px solid var(--border);background:var(--white);color:var(--text-mid);cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
 .filter-chip:hover{border-color:var(--gold);color:var(--gold-dark)}
 .filter-chip.active{background:var(--gold);border-color:var(--gold);color:#fff}
 .search-bar{display:flex;align-items:center;gap:10px;background:var(--white);border:1.5px solid var(--border);border-radius:50px;padding:10px 18px;max-width:340px;flex:1;min-width:200px}
 .search-bar input{border:none;outline:none;font-family:'DM Sans',sans-serif;font-size:.85rem;color:var(--text);background:transparent;flex:1;min-width:0}
-
-/* Cart */
 .cart-overlay{position:fixed;inset:0;background:rgba(44,32,22,.35);z-index:200;display:flex;justify-content:flex-end;backdrop-filter:blur(4px)}
 .cart-drawer{width:min(420px,100vw);height:100%;background:var(--white);display:flex;flex-direction:column;box-shadow:-12px 0 48px rgba(44,32,22,.12);animation:slideIn .25s ease-out}
 @keyframes slideIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
@@ -126,8 +110,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .cart-total-row{display:flex;justify-content:space-between;margin-bottom:16px;align-items:center}
 .cart-total-label{font-size:.85rem;color:var(--text-mid)}
 .cart-total-val{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600}
-
-/* Modal */
 .modal-overlay{position:fixed;inset:0;background:rgba(44,32,22,.4);z-index:300;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(6px)}
 .modal{background:var(--white);border-radius:20px;width:100%;max-width:500px;max-height:90vh;overflow-y:auto;box-shadow:var(--shadow-lg);animation:scaleIn .25s ease-out}
 @keyframes scaleIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
@@ -138,15 +120,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .form-label{font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-mid);margin-bottom:7px;display:block}
 .form-input{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:.88rem;color:var(--text);background:var(--cream);outline:none;transition:border-color .2s}
 .form-input:focus{border-color:var(--gold)}
-
-/* Categories */
 .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
 .cat-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:24px 16px;text-align:center;cursor:pointer;transition:all .25s}
 .cat-card:hover{background:linear-gradient(135deg,var(--blush),var(--nude));border-color:var(--rose);transform:translateY(-3px)}
 .cat-name{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:500}
 .cat-count{font-size:.72rem;color:var(--text-light);margin-top:4px}
-
-/* Testimonials */
 .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
 .testimonial-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px;position:relative}
 .testimonial-card::before{content:'"';font-family:'Cormorant Garamond',serif;font-size:5rem;color:var(--blush);position:absolute;top:10px;left:22px;line-height:1;pointer-events:none}
@@ -155,16 +133,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .testimonial-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--blush),var(--rose));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.88rem;color:#fff;flex-shrink:0}
 .testimonial-name{font-weight:600;font-size:.85rem}
 .testimonial-loc{font-size:.72rem;color:var(--text-light)}
-
-/* FAQ */
 .faq-item{border-bottom:1px solid var(--border);padding:20px 0}
 .faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:500;font-size:.9rem}
 .faq-a{font-size:.88rem;color:var(--text-mid);line-height:1.7;padding-top:12px;display:none}
 .faq-a.open{display:block}
 .faq-icon{font-size:1.2rem;color:var(--gold);transition:transform .2s;flex-shrink:0}
 .faq-icon.open{transform:rotate(45deg)}
-
-/* Product detail */
 .product-detail{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;padding-top:20px}
 .product-detail-img{border-radius:var(--r);overflow:hidden;aspect-ratio:1}
 .product-detail-img img{width:100%;height:100%;object-fit:cover}
@@ -176,8 +150,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .qty-big-btn{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--border);background:none;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;transition:all .2s}
 .qty-big-btn:hover{background:var(--blush)}
 .qty-big-num{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;min-width:28px;text-align:center}
-
-/* Reviews */
 .review-form{background:var(--nude);border-radius:var(--r);padding:24px;margin-top:24px}
 .star-select{display:flex;gap:6px;margin-bottom:12px;cursor:pointer}
 .review-list{margin-top:24px;display:flex;flex-direction:column;gap:16px}
@@ -185,8 +157,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .review-item-header{display:flex;justify-content:space-between;margin-bottom:8px}
 .review-item-name{font-weight:600;font-size:.85rem}
 .review-item-text{font-size:.85rem;color:var(--text-mid);line-height:1.6}
-
-/* Admin */
 .admin-layout{display:flex;min-height:100vh}
 .admin-sidebar{width:250px;background:var(--text);color:#fff;padding:32px 0;flex-shrink:0;position:sticky;top:0;height:100vh;overflow-y:auto}
 .admin-logo{padding:0 24px 28px;font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:8px}
@@ -213,8 +183,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .status-cancelled{background:#fee2e2;color:#991b1b}
 .product-form{background:var(--white);border-radius:var(--r);padding:32px;border:1px solid var(--border);max-width:720px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-
-/* Admin login */
 .admin-login-page{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--text);background-image:radial-gradient(ellipse at 20% 50%,rgba(201,169,110,.15) 0%,transparent 55%)}
 .admin-login-box{background:rgba(255,255,255,.06);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:48px;width:380px;max-width:90vw}
 .admin-login-logo{font-family:'Cormorant Garamond',serif;font-size:2rem;color:#fff;text-align:center;margin-bottom:8px}
@@ -223,8 +191,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .admin-login-page .form-label{color:rgba(255,255,255,.6)}
 .admin-login-page .form-input{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#fff}
 .admin-login-page .form-input::placeholder{color:rgba(255,255,255,.3)}
-
-/* Newsletter */
 .newsletter-section{background:linear-gradient(135deg,var(--text),#3D2A1A);padding:80px 48px;text-align:center}
 .newsletter-title{font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:#fff;margin-bottom:12px}
 .newsletter-sub{font-size:.9rem;color:rgba(255,255,255,.65);margin-bottom:32px}
@@ -232,8 +198,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .newsletter-input{flex:1;padding:14px 20px;border:none;border-radius:50px 0 0 50px;font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none}
 .newsletter-btn{padding:14px 24px;background:var(--gold);color:#fff;border:none;border-radius:0 50px 50px 0;cursor:pointer;font-weight:600;font-size:.85rem}
 .newsletter-btn:hover{background:var(--gold-dark)}
-
-/* Footer */
 .footer{background:var(--text);color:#fff;padding:60px 48px 32px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;max-width:1200px;margin-left:auto;margin-right:auto}
 .footer-brand-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;margin-bottom:12px}
@@ -246,30 +210,20 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .social-links{display:flex;gap:10px;margin-top:16px}
 .social-btn{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);border:none;cursor:pointer;color:rgba(255,255,255,.6);transition:all .2s;font-size:.9rem}
 .social-btn:hover{background:var(--gold);color:#fff}
-
-/* Toast */
 .toast{position:fixed;bottom:24px;right:24px;background:var(--text);color:#fff;padding:14px 22px;border-radius:12px;font-size:.85rem;z-index:1000;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-lg);animation:toastIn .3s ease-out}
 @keyframes toastIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-
-/* Empty state */
 .empty-state{text-align:center;padding:80px 20px}
 .empty-icon{font-size:4rem;margin-bottom:16px}
 .empty-title{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:8px}
 .empty-sub{font-size:.88rem;color:var(--text-light);margin-bottom:24px}
-
-/* Promise cards */
 .promise-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px}
 .promise-card{padding:28px;background:var(--nude);border-radius:var(--r);border:1px solid var(--border)}
 .promise-icon{font-size:2rem;margin-bottom:12px}
 .promise-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin-bottom:8px}
 .promise-desc{font-size:.85rem;color:var(--text-mid);line-height:1.6}
-
-/* Contact info */
 .contact-info-item{display:flex;gap:12px;align-items:center;padding:16px;background:var(--white);border-radius:12px;border:1px solid var(--border);margin-bottom:12px}
 .contact-info-label{font-size:.72rem;color:var(--text-light);text-transform:uppercase;letter-spacing:.08em}
 .contact-info-val{font-size:.88rem;font-weight:500}
-
-/* Responsive */
 @media(max-width:900px){
   .hero{padding:100px 24px 60px}.hero-visual{display:none}
   .section{padding:60px 24px}.footer-grid{grid-template-columns:1fr 1fr}
@@ -290,8 +244,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav class="nav" id="navbar">
   <div class="nav-logo" onclick="showPage('home')">Aura<span>Glow</span></div>
   <div class="nav-links">
@@ -309,8 +261,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
     </button>
   </div>
 </nav>
-
-<!-- PAGES -->
 <div id="page-home"></div>
 <div id="page-store" class="hidden"></div>
 <div id="page-about" class="hidden"></div>
@@ -318,8 +268,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 <div id="page-product" class="hidden"></div>
 <div id="page-admin-login" class="hidden"></div>
 <div id="page-admin" class="hidden"></div>
-
-<!-- CART DRAWER -->
 <div class="cart-overlay hidden" id="cart-overlay" onclick="if(event.target===this)closeCart()">
   <div class="cart-drawer">
     <div class="cart-header">
@@ -330,8 +278,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
     <div class="cart-footer" id="cart-footer"></div>
   </div>
 </div>
-
-<!-- CHECKOUT MODAL -->
 <div class="modal-overlay hidden" id="checkout-overlay" onclick="if(event.target===this)closeCheckout()">
   <div class="modal">
     <div class="modal-header">
@@ -341,12 +287,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
     <div class="modal-body" id="checkout-modal-body"></div>
   </div>
 </div>
-
-<!-- TOAST -->
 <div class="toast hidden" id="toast"></div>
-
 <script>
-// ── Data ─────────────────────────────────────────────────────────────────────
 const WA = '233266601710';
 const PRODUCTS = [
   {id:1,name:'Rose Glow Serum',price:189,description:'A luxurious vitamin C serum enriched with Bulgarian rose extract. Brightens, firms and evens skin tone for a radiant glow.',category:'Serums',skin_type:'All skin types',image:'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80',stock:24,rating:4.8,reviews:142,badge:'Best Seller'},
@@ -376,16 +318,12 @@ const DEMO_ORDERS = [
   {id:'ORD-002',customer_name:'Ama Boateng',total:189,status:'processing',created_at:'2025-06-01',items:1},
   {id:'ORD-003',customer_name:'Abena Asante',total:554,status:'shipped',created_at:'2025-06-02',items:3},
 ];
-
-// ── State ─────────────────────────────────────────────────────────────────────
 let cart = [], wishlist = [], reviews = {}, orders = [...DEMO_ORDERS];
 let products = [...PRODUCTS], currentPage = 'home', selectedProduct = null;
 let storeSearch = '', storeCat = 'All', storeSort = 'default';
 let adminAuthed = false, adminPage = 'overview', editProductId = null;
 let checkoutStep = 1, checkoutForm = {name:'',phone:'',address:'',email:''};
 let reviewStars = 5, productQty = 1;
-
-// ── Helpers ───────────────────────────────────────────────────────────────────
 const fmt = p => `GH₵ ${Number(p).toFixed(2)}`;
 const stars = n => '★'.repeat(Math.round(n)) + '☆'.repeat(5 - Math.round(n));
 const initials = n => n.split(' ').map(w=>w[0]).join('').toUpperCase().slice(0,2);
@@ -403,8 +341,6 @@ function showToast(msg) {
   toastTimer = setTimeout(()=>t.classList.add('hidden'), 3000);
 }
 function scrollTop(){window.scrollTo(0,0);}
-
-// ── Cart ──────────────────────────────────────────────────────────────────────
 function addToCart(id) {
   const p = products.find(x=>x.id===id);
   if(!p) return;
@@ -456,8 +392,6 @@ function renderCart(){
     <button class="btn btn-gold" style="width:100%;margin-bottom:10px" onclick="closeCart();openCheckout()">Checkout</button>
     <a class="btn btn-wa" style="width:100%;text-decoration:none;justify-content:center;display:flex" href="${waOrderUrl(cart,cartTotal())}" target="_blank">📱 Order via WhatsApp</a>`;
 }
-
-// ── Checkout ──────────────────────────────────────────────────────────────────
 function openCheckout(){checkoutStep=1;renderCheckout();document.getElementById('checkout-overlay').classList.remove('hidden');}
 function closeCheckout(){document.getElementById('checkout-overlay').classList.add('hidden');}
 function renderCheckout(){
@@ -498,8 +432,6 @@ function completeOrder(){
   updateBadges(); closeCheckout();
   showToast('Order placed! Check WhatsApp to complete payment 🎉');
 }
-
-// ── Pages ─────────────────────────────────────────────────────────────────────
 function showPage(p){
   ['home','store','about','wishlist','product','admin-login','admin'].forEach(id=>{
     document.getElementById('page-'+id).classList.add('hidden');
@@ -524,8 +456,6 @@ function renderCurrentPage(){
   else if(currentPage==='admin-login') renderAdminLogin();
   else if(currentPage==='admin') renderAdmin();
 }
-
-// ── Product Card HTML ─────────────────────────────────────────────────────────
 function productCardHTML(p){
   const inWish = wishlist.includes(p.id);
   return `<div class="product-card">
@@ -550,14 +480,11 @@ function productCardHTML(p){
   </div>`;
 }
 function openProduct(id){selectedProduct=products.find(p=>p.id===id);productQty=1;showPage('product');}
-
-// ── HOME ──────────────────────────────────────────────────────────────────────
 function renderHome(){
   const MARQUEE=['Clean Formulas','GH Delivery','100% Authentic','Luxury Skincare','Ghana Owned','Glow with Confidence','Premium Quality','WhatsApp Orders'];
   const marqItems = [...MARQUEE,...MARQUEE].map(t=>`<span class="marquee-item">${t}<span class="marquee-dot"></span></span>`).join('');
   document.getElementById('page-home').innerHTML=`
   <div style="padding-top:68px">
-    <!-- Hero -->
     <section class="hero mesh-bg">
       <div class="hero-content">
         <div class="hero-eyebrow">Premium Skincare</div>
@@ -575,19 +502,13 @@ function renderHome(){
       </div>
       <div class="hero-visual"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=900&q=85" alt="Skincare"/></div>
     </section>
-
-    <!-- Marquee -->
     <div class="marquee-wrap"><div class="marquee-track">${marqItems}</div></div>
-
-    <!-- Categories -->
     <section class="section" style="background:var(--white)">
       <div style="max-width:1100px;margin:0 auto">
         <div class="section-header"><div class="section-eyebrow">Browse by Category</div><h2 class="section-title serif">Shop The Ritual</h2></div>
         <div class="cat-grid">${CAT_META.map(c=>`<div class="cat-card" onclick="storeCat='${c.name}';showPage('store')"><div class="cat-name serif">${c.name}</div><div class="cat-count">${c.count} products</div></div>`).join('')}</div>
       </div>
     </section>
-
-    <!-- Best Sellers -->
     <section class="section mesh-bg">
       <div style="max-width:1200px;margin:0 auto">
         <div class="section-header"><div class="section-eyebrow">Most Loved</div><h2 class="section-title serif">Best Sellers</h2><p class="section-subtitle">Trusted by thousands of glowing skin enthusiasts across Ghana</p></div>
@@ -595,8 +516,6 @@ function renderHome(){
         <div style="text-align:center;margin-top:40px"><button class="btn btn-outline" onclick="showPage('store')">View All Products →</button></div>
       </div>
     </section>
-
-    <!-- Promise -->
     <section class="section" style="background:var(--white)">
       <div style="max-width:1100px;margin:0 auto">
         <div class="section-header"><div class="section-eyebrow">Why Us</div><h2 class="section-title serif">The AuraGlow Promise</h2></div>
@@ -606,8 +525,6 @@ function renderHome(){
         </div>
       </div>
     </section>
-
-    <!-- Testimonials -->
     <section class="section mesh-bg">
       <div style="max-width:1200px;margin:0 auto">
         <div class="section-header"><div class="section-eyebrow">Customer Love</div><h2 class="section-title serif">Real Results, Real Stories</h2></div>
@@ -616,15 +533,12 @@ function renderHome(){
         </div>
       </div>
     </section>
-
-    <!-- FAQ -->
     <section class="section" style="background:var(--white)">
       <div style="max-width:720px;margin:0 auto">
         <div class="section-header"><div class="section-eyebrow">FAQs</div><h2 class="section-title serif">Common Questions</h2></div>
         ${FAQS.map((f,i)=>`<div class="faq-item"><div class="faq-q" onclick="toggleFaq(${i})"><span>${f.q}</span><span class="faq-icon" id="faq-icon-${i}">+</span></div><div class="faq-a" id="faq-a-${i}">${f.a}</div></div>`).join('')}
       </div>
     </section>
-
     ${newsletterHTML()}
     ${contactSectionHTML()}
     ${footerHTML()}
@@ -634,8 +548,6 @@ function toggleFaq(i){
   const a=document.getElementById('faq-a-'+i), ic=document.getElementById('faq-icon-'+i);
   a.classList.toggle('open'); ic.classList.toggle('open');
 }
-
-// ── STORE ─────────────────────────────────────────────────────────────────────
 function renderStore(){
   const filtered = products
     .filter(p=>(storeCat==='All'||p.category===storeCat)&&(!storeSearch||p.name.toLowerCase().includes(storeSearch.toLowerCase())||p.description.toLowerCase().includes(storeSearch.toLowerCase())))
@@ -672,8 +584,6 @@ function renderStore(){
     ${footerHTML()}
   </div>`;
 }
-
-// ── ABOUT ─────────────────────────────────────────────────────────────────────
 function renderAbout(){
   document.getElementById('page-about').innerHTML=`
   <div style="padding-top:68px;min-height:100vh">
@@ -697,8 +607,6 @@ function renderAbout(){
     ${footerHTML()}
   </div>`;
 }
-
-// ── WISHLIST ──────────────────────────────────────────────────────────────────
 function renderWishlist(){
   const items = products.filter(p=>wishlist.includes(p.id));
   document.getElementById('page-wishlist').innerHTML=`
@@ -714,8 +622,6 @@ function renderWishlist(){
     ${footerHTML()}
   </div>`;
 }
-
-// ── PRODUCT DETAIL ────────────────────────────────────────────────────────────
 function renderProduct(){
   const p = selectedProduct;
   if(!p) return;
@@ -755,8 +661,6 @@ function renderProduct(){
             </div>
           </div>
         </div>
-
-        <!-- Reviews -->
         <div style="margin-top:60px">
           <h2 class="serif" style="font-size:1.8rem;margin-bottom:24px">Customer Reviews</h2>
           <div class="review-form">
@@ -787,8 +691,6 @@ function submitReview(pid){
   reviewStars=5; showToast('Review submitted! Thank you ✨');
   renderProduct();
 }
-
-// ── ADMIN LOGIN ───────────────────────────────────────────────────────────────
 function renderAdminLogin(){
   document.getElementById('page-admin-login').innerHTML=`
   <div class="admin-login-page">
@@ -799,7 +701,6 @@ function renderAdminLogin(){
       <div class="form-group"><label class="form-label">Password</label><input class="form-input" id="al-pass" type="password" placeholder="••••••••" onkeydown="if(event.key==='Enter')doAdminLogin()"/></div>
       <p id="al-err" style="color:#f87171;font-size:.82rem;margin-bottom:14px;display:none">Invalid credentials.</p>
       <button class="btn btn-gold" style="width:100%" onclick="doAdminLogin()">Sign In</button>
-      <p style="color:rgba(255,255,255,.3);font-size:.72rem;text-align:center;margin-top:16px">Default: admin@auraglow.com / AuraGlow2025!</p>
     </div>
   </div>`;
 }
@@ -809,8 +710,6 @@ function doAdminLogin(){
   if(e==='admin@auraglow.com'&&p==='AuraGlow2025!'){adminAuthed=true;showPage('admin');}
   else{document.getElementById('al-err').style.display='block';}
 }
-
-// ── ADMIN DASHBOARD ───────────────────────────────────────────────────────────
 let adminForm={name:'',price:'',description:'',category:'Serums',skin_type:'All skin types',stock:'',image:'',badge:''};
 function renderAdmin(){
   if(!adminAuthed){showPage('admin-login');return;}
@@ -819,7 +718,6 @@ function renderAdmin(){
   const navItems=[{id:'overview',icon:'📊',label:'Overview'},{id:'products',icon:'🧴',label:'Products'},{id:'add-product',icon:'➕',label:'Add Product'},{id:'orders',icon:'📦',label:'Orders'},{id:'categories',icon:'🏷',label:'Categories'}];
   const sidebar=navItems.map(n=>`<div class="admin-nav-item ${adminPage===n.id?'active':''}" onclick="adminPage='${n.id}';renderAdmin()"><span>${n.icon}</span>${n.label}</div>`).join('');
   let main='';
-
   if(adminPage==='overview'){
     main=`
     <div class="admin-topbar"><h1 class="admin-page-title serif">Dashboard</h1><span style="font-size:.82rem;color:var(--text-light)">${new Date().toLocaleDateString('en-GH',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</span></div>
@@ -875,7 +773,6 @@ function renderAdmin(){
       ${CATEGORIES.filter(c=>c!=='All').map(c=>`<div style="background:var(--white);border-radius:var(--r);padding:24px;border:1px solid var(--border);text-align:center"><div class="serif" style="font-size:1.2rem;margin-bottom:8px">${c}</div><div style="font-size:.78rem;color:var(--text-light)">${products.filter(p=>p.category===c).length} products</div></div>`).join('')}
     </div>`;
   }
-
   document.getElementById('page-admin').innerHTML=`
   <div class="admin-layout">
     <div class="admin-sidebar">
@@ -923,8 +820,6 @@ function saveAdminProduct(){
   editProductId=null; adminForm={name:'',price:'',description:'',category:'Serums',skin_type:'All skin types',stock:'',image:'',badge:''};
   adminPage='products'; renderAdmin();
 }
-
-// ── Shared Sections ───────────────────────────────────────────────────────────
 function newsletterHTML(){return `
   <div class="newsletter-section">
     <div class="newsletter-title serif">Stay in the Glow</div>
@@ -938,7 +833,6 @@ function doNewsletter(){
   const e=document.getElementById('nl-email');
   if(e&&e.value){showToast('Subscribed! 🌸');e.value='';}
 }
-
 function contactSectionHTML(){return `
   <section class="section mesh-bg" id="contact">
     <div style="max-width:1100px;margin:0 auto">
@@ -967,7 +861,6 @@ function sendContact(){
   const n=document.getElementById('cf-name'),m=document.getElementById('cf-msg');
   if(n&&m&&n.value&&m.value){showToast("Message sent! We'll reply within 24 hours.");n.value='';document.getElementById('cf-email').value='';m.value='';}
 }
-
 function footerHTML(){return `
   <footer class="footer">
     <div class="footer-grid">
@@ -1000,8 +893,6 @@ function footerHTML(){return `
       <span>Orders completed securely via WhatsApp</span>
     </div>
   </footer>`;}
-
-// ── Init ──────────────────────────────────────────────────────────────────────
 showPage('home');
 </script>
 </body>
